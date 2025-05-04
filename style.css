@@ -7,6 +7,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 body>div {
@@ -14,11 +15,19 @@ body>div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    border: 2px solid black;
+    border-radius: 16px;
+    padding: 20px 40px 10px;
 }
-/*
-div.table-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+div.table-container > table {
+    border: 2px solid black;
+    margin: 6px;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 4px;
+    border: 1px solid grey;
 }
